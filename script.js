@@ -3,12 +3,19 @@
 
 const container = document.querySelector("#container");
 
-let squaresPerSide = prompt();
+let squaresPerSide = 16;
 
+const newGridBtn = document.createElement("button");
+newGridBtn.classList.add("new-grid-btn");
+newGridBtn.textContent = "click here";
+document.body.insertBefore(newGridBtn, container);
+
+newGridBtn.addEventListener("click", function(){
+    squaresPerSide = prompt();
     
+    
+});
 
-
-   // squareRow = squaresPerSide * squaresPerSide
 
     for (let i = 0; i < squaresPerSide; i++){
         const squareRow = document.createElement("div");
