@@ -5,16 +5,26 @@
 #container{
     display:flex;
     flex-wrap:wrap;
-    align-items:stretch;
+    flex-direction:row;
+    /*align-items:stretch;*/
     height:860px;
     width:860px;
     background-color:yellow;
 }
 
-.square-row{
+.new-container{
+    display:flex;
+    flex-wrap:wrap;
+    /*align-items:stretch;*/
+    height:860px;
+    width:860px;
+    background-color:yellow;
+}
+
+.square-column{
     display:flex;
     
-    align-content:center;
+    /*align-content:center;*/
     color: red;
     background-color: yellow;
     
@@ -25,7 +35,7 @@
 
 .square-child{
     color: red;
-    /*background-color: green;*/
+    
     width:860px;
     
     
