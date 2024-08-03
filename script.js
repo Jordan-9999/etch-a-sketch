@@ -5,18 +5,24 @@ let container = document.querySelector("#container");
 
 let squaresPerSide = 16;
 
+let errorMessage = "please choose between 1-100."
 
 const newGridBtn = document.createElement("button");
 newGridBtn.classList.add("new-grid-btn");
-newGridBtn.textContent = "click here";
+newGridBtn.textContent = "create new sketch";
 document.body.insertBefore(newGridBtn, container);
 
 
 
 newGridBtn.addEventListener("click", function(){
 
-    squaresPerSide = prompt();
+    squaresPerSide = prompt("how many squares per side? (please choose between 1-100)");
+    if (squaresPerSide < 1 || squaresPerSide > 100){
+        alert(errorMessage);
+    }
     
+    else{
+
     container.remove();
     let newContainer = document.createElement("div");
     newContainer.classList.add("new-container");
@@ -39,7 +45,7 @@ newGridBtn.addEventListener("click", function(){
     }}
 
     container = newContainer;
-    
+}
 });
 
 
