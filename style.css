@@ -1,5 +1,8 @@
 .new-grid-btn{
     background-color:#81fc93;
+    padding:10px;
+    margin-bottom:8px;
+    font-size:20px;
 }
 
 #container{
@@ -23,17 +26,10 @@
     display:flex;
     width:860px;
     border:1px solid black;
-    /*background-color:yellow;*/
-    
 }
 
 .square-child{
-    
-    /*background-color:black;*/
     width:860px;
-    
-    
-    
     border-left:1px solid black;
     border-right:1px solid black;
 }
